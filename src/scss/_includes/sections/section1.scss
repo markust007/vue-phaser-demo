@@ -1,0 +1,54 @@
+#section1 {
+  position: relative;
+  background: $white;
+  /* this is to stop collapsing margins */
+  padding-top: 1px;
+  margin-top: -1px;
+  height: $section-height;
+  /*==============================
+              PAGE 1
+  ==============================*/
+  .page1 {
+    // background: $gray;
+    background-image: url("../media/section1/bg_Intro.jpg");
+    @include background();
+    padding-top: 1px;
+    margin-top: -1px;
+    height: 100%;
+    color: $white;
+    h3 {
+      text-align: center;
+      margin-top: 100px;
+    }
+    p {
+      text-align: center;
+    }
+    button {
+      margin: 10px auto 0;
+      display: block;
+      width: 225px;
+    }
+  }
+  /*==============================
+              PAGE 2
+  ==============================*/
+  .page2 {
+    background: $gray-dark;
+    padding-top: 1px;
+    margin-top: -1px;
+    height: 100%;
+    color: $white;
+    h3 {
+      text-align: center;
+      margin-top: 100px;
+    }
+    p {
+      text-align: center;
+    }
+    button {
+      margin: 10px auto 0;
+      display: block;
+    }
+  }
+//END SECTION 1
+}

@@ -1,0 +1,11 @@
+footer {
+  background: #dc6432;
+  position: absolute;
+  bottom: 0;
+  height: $footer-height;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

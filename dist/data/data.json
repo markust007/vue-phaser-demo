@@ -1,0 +1,44 @@
+{
+    "header": [
+        {
+            "title": "Collect The Coins",
+            "button": "Exit",
+            "resources": "Line Item One",
+            "source": "https://www.google.com/"
+        },
+        {
+            "resources": "Line Item Two",
+            "source": "https://www.google.com/"
+        },
+        {
+            "resources": "Line Item Three",
+            "source": "https://www.google.com/"
+        },
+        {
+            "resources": "Line Item Four",
+            "source": "https://www.google.com/"
+        },
+        {
+            "resources": "Line Item Five",
+            "source": "https://www.google.com/"
+        }
+    ],
+    "s1page1": [
+        {
+            "title": "Welcome!",
+            "text": "This is the Vue.js Pager Boilerplate. Click next to continue."
+        }
+    ],
+    "s1page2": [
+        {
+            "title": "Page 2",
+            "text": "This is page 2 of the Vue.js Pager Boilerplate. More pages can be added."
+        }
+    ],
+    "s2page1": [
+        {
+            "title": "I am Section 2",
+            "text": "Section 2 text"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+/* ============================================================
+
+Styles
+
+============================================================ */
+
+// VARIABLES ====================
+$gray            : rgba(119, 120, 123, 1);
+$gray-light      : rgba(230, 231, 232, 1);
+$gray-dark       : rgba(88, 89, 91, 1);
+$black           : #000000;
+$white           : #ffffff;
+
+$max-width	     : 1010px;
+$section-height  : 660px;
+$header-height   : 50px;
+$footer-height   : 40px;
+
+
+// BOURBON
+// @import "bourbon";
+
+// FONT AWESOME
+@import "_includes/fontawesome";
+
+// FONTS
+// @import "_includes/fonts";
+
+// MIXINS
+@import "_includes/mixins";
+
+// BASE (global/site wide styles)
+@import "_includes/base";
+
+// USER INTERFACE (icons, buttons, forms, tabs, overlays, etc.)
+@import "_includes/buttons";
+
+// SECTIONS
+@import "_includes/sections/header";
+@import "_includes/sections/footer";
+@import "_includes/sections/section1";
+@import "_includes/sections/section2";
+
+
+// COLORS (text, background, border, etc.)
+
+// MEDIA QUERIES
+// 1024 width max
+// @media only screen and (max-width: 1024px) {
+//    @import "_includes/mq/1024";
+// }
+// 768 width max
+// @media only screen and (max-width: 768px) {
+//    @import "_includes/mq/640";
+// }
+// 640 width max
+// @media only screen and (max-width: 640px) {
+//    @import "_includes/mq/640";
+// }
+// 1200 width max
+// @media only screen and (min-width: 1200px) {
+//    @import "_includes/mq/1200";
+// }
+// Print Styles
+@import "_includes/print";
+@import "~mobile-drag-drop/default.css";

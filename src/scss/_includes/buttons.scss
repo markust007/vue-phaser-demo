@@ -1,0 +1,57 @@
+button {
+  background: transparent;
+  border: 0;
+  transition: all .3s;
+  cursor: pointer;
+  &:hover {
+
+  }
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline:none;
+  }
+  &.disable {
+    cursor: default;
+    pointer-events: none;
+  }
+}
+.button {
+  padding: 10px;
+  background: rgb(249,238,199);
+  border: 4px solid #dc6432;
+  border-radius: 12px;
+font-family: 'Chewy', cursive;
+color: #dc6432;
+font-size: 2rem;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+background: -moz-radial-gradient(center, ellipse cover, rgba(249,238,199,1) 29%, rgba(255,207,76,1) 100%);
+background: -webkit-radial-gradient(center, ellipse cover, rgba(249,238,199,1) 29%,rgba(255,207,76,1) 100%);
+background: radial-gradient(ellipse at center, rgba(249,238,199,1) 29%,rgba(255,207,76,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9eec7', endColorstr='#ffcf4c',GradientType=1 );
+  -webkit-box-shadow: 0px 15px 32px -14px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 15px 32px -14px rgba(0,0,0,0.75);
+  box-shadow: 0px 15px 32px -14px rgba(0,0,0,0.75);
+  &:active {
+
+  }
+  &:focus {
+
+  }
+  &:hover {
+    font-size: 2.25rem;
+  }
+  &.disable {
+
+  }
+  &.correct {
+    background: darken(green, 10%);
+  }
+  &.incorrect {
+    background: #f10000;
+  }
+  &.checked {
+    background: darken($gray-light, 10%);
+  }
+}

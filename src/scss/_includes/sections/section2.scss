@@ -1,0 +1,22 @@
+#section2 {
+  position: relative;
+  background: $gray;
+  /* this is to stop collapsing margins */
+  padding-top: 1px;
+  margin-top: -1px;
+  height: $section-height;
+  /*==============================
+              PAGE 1
+  ==============================*/
+  .page1 {
+    color: $white;
+    h3 {
+      text-align: center;
+      margin-top: 100px;
+    }
+    p {
+      text-align: center;
+    }
+  }
+//END SECTION 2
+}

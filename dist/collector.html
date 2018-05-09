@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+  <style>
+    .atlwdg-popup {
+      height: 100% !important;
+      width: 100% !important;
+      max-height: 100% !important;
+      max-width: 100% !important;
+      border: none !important;
+    }
+
+    .atlwdg-blanket {
+      background: #f5f5f5 !important;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Replace only this section -->
+<script type="text/javascript" src="https://alleninteractions.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-rfrvv0/b/6/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=e085fdb3"></script>
+  <!-- End section -->
+
+  <script>
+    // Source: http://stackoverflow.com/questions/979975/how-to-get-the-value-from-the-url-parameter
+    var QueryString = function() {
+      // This function is anonymous, is executed immediately and
+      // the return value is assigned to QueryString!
+      var query_string = {};
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        // If first entry with this name
+        if (typeof query_string[pair[0]] === "undefined") {
+          query_string[pair[0]] = decodeURIComponent(pair[1]);
+          // If second entry with this name
+        } else if (typeof query_string[pair[0]] === "string") {
+          var arr = [query_string[pair[0]], decodeURIComponent(pair[1])];
+          query_string[pair[0]] = arr;
+          // If third or later entry with this name
+        } else {
+          query_string[pair[0]].push(decodeURIComponent(pair[1]));
+        }
+      }
+      return query_string;
+    }();
+
+    var launchTrigger;
+
+    function popup() {
+      launchTrigger();
+      setInterval(watchForClose, 33)
+    }
+
+    function watchForClose() {
+      if (document.getElementById('atlwdg-frame') === null) {
+        window.self.close();
+      }
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+      fieldValues: {
+        summary: QueryString['summary'],
+        email: QueryString['email'],
+        fullname: QueryString['name'],
+        customfield_10026: QueryString['location']
+      },
+      environment: QueryString,
+      "triggerFunction": function(showCollectorDialog) {
+        launchTrigger = showCollectorDialog;
+        setTimeout(popup, 50);
+      }
+    };
+
+  </script>
+</body>
+
+</html>

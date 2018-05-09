@@ -1,0 +1,37 @@
+header {
+  background-image: none;
+  @include background();
+  background: #dc6432;
+  position: fixed;
+  top: 0;
+  height: $header-height;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    color: $white;
+    margin: 0;
+    text-align: center;
+    flex-grow: 8;
+    font-family: 'Chewy', cursive;
+    letter-spacing: 3px;
+    color: #eeb418;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.6);
+  }
+  button {
+    color: $white;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    &.menu {
+      text-align: left;
+      padding-left: 10px;
+    }
+    &.exit {
+      text-align: right;
+      padding-right: 10px;
+    }
+  }
+}
